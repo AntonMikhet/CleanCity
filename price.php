@@ -83,7 +83,7 @@ $headers1 = "From: cleancityminsk@gmail.com\r\nContent-type: text/html; charset=
 $message1 = '
 <h1 align=center> Добрый день! </h1>
         <div style="display: flex; width: 420px; margin: 0 auto; flex-direction: column;">
-        <a href="https://yadi.sk/d/4mOiUGsiPNNuBA" style="color: green"> Ссылка на Price List + Зафиксированная скидка 20% </a>
+        <a href="https://yadi.sk/d/4mOiUGsiPNNuBA" style="color: green"> Ссылка на Price List + Зафиксированная скидка 35% </a>
         <a href="https://yadi.sk/d/4mOiUGsiPNNuBA" style=" width: 420px; margin: 10px auto"><button style="cursor: pointer; height: 50px; width: 420px;background-color: #ffc228; color: black;font-size: 16px;border: 0;border-radius: 6px;margin: 10px 0 30px 0px;">Price List</button></a>
     </div>
 ';  

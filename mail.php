@@ -69,7 +69,7 @@ $needSushka = trim($needSushka);
 
 
 $subject = "=?utf-8?B?".base64_encode("Заявка Clean City")."?=";
-$headers = "From: cleancity@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
+$headers = "From: cleancityminsk@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
 $message = 'Имя: ' .$name. '<br/>Номер телефона: +' .$phone. '<br/>Тип уборки: ' .$typeclean. '<br/>Площадь помещения: ' .$area. '<br/>Количесьвл комнат: ' .$valueKomnat. '<br/>Количество сан узлов: ' .$valueTualet. '<br/>Количество окон: ' .$valueWindow. '<br/>Дополнительные опции: <br/>' .$nadoVimitStemi. '<br/>' .$uborkalastrenovation. '<br/>' .$NeedDryCleaning. '<br/>' .$needCleanTrudno. '<br/>' .$furniture. '<br/>' .$needSushka;  
 
 if (mail("cleancityminsk@gmail.com", $subject, $message ,$headers))

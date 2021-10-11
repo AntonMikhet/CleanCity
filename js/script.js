@@ -894,107 +894,237 @@ window.onscroll = function headerHidden() {
         }
     }
 
-    var datenow = new Date();
-    var yeardate = datenow.getFullYear(datenow);
-    var monthdate = datenow.getMonth(datenow);
-    var monthdatetimer = datenow.getMonth(datenow) + 1;
-    var daydate = datenow.getDate(datenow) + 2;
+    // var datenow = new Date();
+    // var yeardate = datenow.getFullYear(datenow);
+    // var monthdate = datenow.getMonth(datenow);
+    // var monthdatetimer = datenow.getMonth(datenow) + 1;
+    // var daydate = datenow.getDate(datenow) + 2;
     // var date = monthdatetimer + "-" + daydate + "-" + yeardate; 
-    var date = '12-31-2020';
-    var countDownDate = new Date(date.replace(/-/g, "/")).getTime();
+    
+    // var countDownDate = new Date(date.replace(/-/g, "/")).getTime();
 
 
-    if (monthdate == 1) {
-        monthdate = " Января"
-    } else if (monthdate == 1) {
-        monthdate = " Февраля"
-    } else if (monthdate == 2) {
-        monthdate = " Марта"
-    } else if (monthdate == 3) {
-        monthdate = " Апреля"
-    } else if (monthdate == 4) {
-        monthdate = " Мая"
-    } else if (monthdate == 5) {
-        monthdate = " Июня"
-    } else if (monthdate == 6) {
-        monthdate = " Июля"
-    } else if (monthdate == 7) {
-        monthdate = " Августа"
-    } else if (monthdate == 8) {
-        monthdate = " Сентярбря"
-    } else if (monthdate == 9) {
-        monthdate = " Октября"
-    } else if (monthdate == 10) {
-        monthdate = " Ноября"
-    } else if (monthdate == 11) {
-        monthdate = " Декабря"
-    } 
-    // var datetimer = daydate + monthdate;
-    var datetimer = '31 Декабря';
-    document.getElementById('date').innerHTML = datetimer;
+    // if (monthdate == 1) {
+    //     monthdate = " Января"
+    // } else if (monthdate == 1) {
+    //     monthdate = " Февраля"
+    // } else if (monthdate == 2) {
+    //     monthdate = " Марта"
+    // } else if (monthdate == 3) {
+    //     monthdate = " Апреля"
+    // } else if (monthdate == 4) {
+    //     monthdate = " Мая"
+    // } else if (monthdate == 5) {
+    //     monthdate = " Июня"
+    // } else if (monthdate == 6) {
+    //     monthdate = " Июля"
+    // } else if (monthdate == 7) {
+    //     monthdate = " Августа"
+    // } else if (monthdate == 8) {
+    //     monthdate = " Сентярбря"
+    // } else if (monthdate == 9) {
+    //     monthdate = " Октября"
+    // } else if (monthdate == 10) {
+    //     monthdate = " Ноября"
+    // } else if (monthdate == 11) {
+    //     monthdate = " Декабря"
+    // } 
+    // // var datetimer = daydate + monthdate;
+    // var datetimer = '31 Декабря';
+    // document.getElementById('date').innerHTML = datetimer;
     
     
-    // Update the count down every 1 second
-    var x = setInterval(function() {
+    // // Update the count down every 1 second
+    // var x = setInterval(function() {
     
-        // Get todays date and time
-        var now = new Date().getTime();
+    //     // Get todays date and time
+    //     var now = new Date().getTime();
         
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
+    //     // Find the distance between now an the count down date
+    //     var distance = countDownDate - now;
         
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-       if (days == 0) {
-            var daystext = ' Дней ';
-       } else if (days == 1) {
-            var daystext = ' День ';
-       } else if (days > 1 && days < 5) {
-            var daystext = ' Дня ';
-       } else if (days > 4) {
-            var daystext = ' Дней ';
-       }
-       if (hours == 0) {
-           var hourstext = " Часов"
-       } else if (hours == 1) {
-            var hourstext = " Час"
-       } if (hours > 1 && hours < 5) {
-            var hourstext = " Часа"
-       } if (hours > 4) {
-            var hourstext = " Часов"
-       }
-       if (/0/.test(minutes) == 1) {
-           var minutestext = " Минут"
-       } else if (/1/.test(minutes) == 1) {
-            var minutestext = " Минута"
-       } else if (/2/.test(minutes) == 1) {
-            var minutestext = " Минуты"
-       } else if (/3/.test(minutes) == 1) {
+    //     // Time calculations for days, hours, minutes and seconds
+    //     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //    if (days == 0) {
+    //         var daystext = ' Дней ';
+    //    } else if (days == 1) {
+    //         var daystext = ' День ';
+    //    } else if (days > 1 && days < 5) {
+    //         var daystext = ' Дня ';
+    //    } else if (days > 4) {
+    //         var daystext = ' Дней ';
+    //    }
+    //    if (hours == 0) {
+    //        var hourstext = " Часов"
+    //    } else if (hours == 1) {
+    //         var hourstext = " Час"
+    //    } if (hours > 1 && hours < 5) {
+    //         var hourstext = " Часа"
+    //    } if (hours > 4) {
+    //         var hourstext = " Часов"
+    //    }
+    //    if (/0/.test(minutes) == 1) {
+    //        var minutestext = " Минут"
+    //    } else if (/1/.test(minutes) == 1) {
+    //         var minutestext = " Минута"
+    //    } else if (/2/.test(minutes) == 1) {
+    //         var minutestext = " Минуты"
+    //    } else if (/3/.test(minutes) == 1) {
+    //     var minutestext = " Минуты"
+    //     } else if (/4/.test(minutes) == 1) {
+    //         var minutestext = " Минуты"
+    //     } else if (/5/.test(minutes) == 1) {
+    //         var minutestext = " Минут"
+    //     } else if (/6/.test(minutes) == 1) {
+    //         var minutestext = " Минут"
+    //     } else if (/7/.test(minutes) == 1) {
+    //         var minutestext = " Минут"
+    //     } else if (/8/.test(minutes) == 1) {
+    //         var minutestext = " Минут"
+    //     } else if (/9/.test(minutes) == 1) {
+    //         var minutestext = " Минут"
+    //     } 
+    
+    //     // Output the result in an element with id="demo"
+    //     document.getElementById("demo").innerHTML = '<div class="timer">' + days + daystext + '</div>' + '<div class="timer">' + hours + hourstext + '</div>' + '<div class="timer">' +
+    //     + minutes + minutestext + '</div>' + '<div class="timer">' + seconds + " Секунд" + '</div>';
+        
+    //     // If the count down is over, write some text 
+    //     if (distance < 0) {
+    //         clearInterval(x);
+    //         document.getElementById("demo").innerHTML = '<div class="timer"> Время вышло </div>';
+    //     }
+    // }, 1000);
+
+    
+var datenow = new Date()
+var yeardate = datenow.getFullYear(datenow);
+var monthdate = datenow.getMonth(datenow);
+var monthdatetimer = datenow.getMonth(datenow);
+var daydate = datenow.getDate(datenow);
+
+var daydate = daydate + 2;
+var monthdatetimer = monthdatetimer + 1;
+
+
+var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+
+if (daydate == 32) {
+    var daydate = daydate - 1; 
+    var monthdatetimer = monthdatetimer;
+    var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+} else if (daydate == 33) {
+    var daydate = daydate - 1; 
+    var monthdatetimer = monthdatetimer;
+    var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+} 
+
+var countDownDate = new Date(datetimer.replace(/-/g, "/")).getTime();
+
+console.log(countDownDate)
+
+if (monthdate == 1) {
+    monthdate = " Января"
+} else if (monthdate == 1) {
+    monthdate = " Февраля"
+} else if (monthdate == 2) {
+    monthdate = " Марта"
+} else if (monthdate == 3) {
+    monthdate = " Апреля"
+} else if (monthdate == 4) {
+    monthdate = " Мая"
+} else if (monthdate == 5) {
+    monthdate = " Июня"
+} else if (monthdate == 6) {
+    monthdate = " Июля"
+} else if (monthdate == 7) {
+    monthdate = " Августа"
+} else if (monthdate == 8) {
+    monthdate = " Сентярбря"
+} else if (monthdate == 9) {
+    monthdate = " Октября"
+} else if (monthdate == 10) {
+    monthdate = " Ноября"
+} else if (monthdate == 11) {
+    monthdate = " Декабря"
+} 
+if (daydate == 31) {
+    var daydate = daydate - 1; 
+    var date = daydate + monthdate;
+document.getElementById('date').innerHTML = date;
+} else if (daydate == 33) {
+    var daydate = daydate - 1; 
+    var date = daydate + monthdate;
+    document.getElementById('date').innerHTML = date; 
+} else {
+    var date = daydate + monthdate;
+    document.getElementById('date').innerHTML = date;
+};
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+ 
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   if (days == 0) {
+        var daystext = ' Дней ';
+   } else if (days == 1) {
+        var daystext = ' День ';
+   } else if (days > 1 && days < 5) {
+        var daystext = ' Дня ';
+   } else if (days > 4) {
+        var daystext = ' Дней ';
+   }
+   if (hours == 0 || hours > 5 && hours < 21) {
+       var hourstext = " Часов"
+   } else if (hours == 1 || hours == 21) {
+        var hourstext = " Час"
+   } else if (hours > 1 && hours < 5 || hours > 21) {
+        var hourstext = " Часа"
+   }
+
+   if (/0/.test(minutes) == 1) {
+       var minutestext = " Минут"
+   } else if (/1/.test(minutes) == 1) {
+        var minutestext = " Минута"
+   } else if (/2/.test(minutes) == 1) {
         var minutestext = " Минуты"
-        } else if (/4/.test(minutes) == 1) {
-            var minutestext = " Минуты"
-        } else if (/5/.test(minutes) == 1) {
-            var minutestext = " Минут"
-        } else if (/6/.test(minutes) == 1) {
-            var minutestext = " Минут"
-        } else if (/7/.test(minutes) == 1) {
-            var minutestext = " Минут"
-        } else if (/8/.test(minutes) == 1) {
-            var minutestext = " Минут"
-        } else if (/9/.test(minutes) == 1) {
-            var minutestext = " Минут"
-        } 
+   } else if (/3/.test(minutes) == 1) {
+    var minutestext = " Минуты"
+    } else if (/4/.test(minutes) == 1) {
+        var minutestext = " Минуты"
+    } else if (/5/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/6/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/7/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/8/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/9/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } 
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = '<div class="timer">' + days + daystext + '</div>' + '<div class="timer">' + hours + hourstext + '</div>' + '<div class="timer">' +
+    + minutes + minutestext + '</div>' + '<div class="timer">' + seconds + " Секунд" + '</div>';
     
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = '<div class="timer">' + days + daystext + '</div>' + '<div class="timer">' + hours + hourstext + '</div>' + '<div class="timer">' +
-        + minutes + minutestext + '</div>' + '<div class="timer">' + seconds + " Секунд" + '</div>';
-        
-        // If the count down is over, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = '<div class="timer"> Время вышло </div>';
-        }
-    }, 1000);
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = '<div class="timerbox"> Время вышло </div>';
+    }
+}, 1000);

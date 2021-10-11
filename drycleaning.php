@@ -49,7 +49,7 @@ $subject = "=?utf-8?B?".base64_encode("Заявка Сlean City")."?=";
 $headers = "From: cleancityminsk@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
 $message = 'Имя: ' .$name. '<br/>Номер телефона: +' .$phone. '<br/>Комментарий: ' .$comment. '<br/> Мебель: ' .$divan. '<br/>' .$kover. '<br/>' .$matras. '<br/>' .$furniture. '<br/> Источник: ' .$urlSource. '<br/> Объявление: ' .$urlAd;  
 
-if (mail("dry.clean.minsk@gmail.com", $subject, $message ,$headers))
+if (mail("cleancityminsk@gmail.com", $subject, $message ,$headers))
 {header("Location: thanks.html");}     
 
 ?>
